@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "todos-3e10a": {
+      "hosting": {
+        "TodoApp": [
+          "todos-3e10a"
+        ]
+      }
+    }
+  }
+}
