@@ -17,5 +17,7 @@ export class AppComponent implements OnInit {
       else
         this.router.navigateByUrl('/login');
     });
+
+    this.afAuth.idToken.subscribe(token => sessionStorage.setItem('token', token));
   }
 }
