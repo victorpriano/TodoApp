@@ -8,7 +8,10 @@ import firebase from 'firebase/app';
   template: '<router-outlet></router-outlet>',
 })
 export class AppComponent implements OnInit {
-  constructor(private afAuth: AngularFireAuth, private router: Router) { }
+  constructor(
+    private afAuth: AngularFireAuth, 
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     this.afAuth.onAuthStateChanged(data => {
