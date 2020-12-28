@@ -36,7 +36,7 @@ export class NewComponent implements OnInit {
     this.afAuth.idToken.subscribe(token => {
       this.service.postTodo(this.form.value, token)
         .subscribe(res => {
-          this.router.navigateByUrl("/")
+          this.router.navigateByUrl("/");
         });
     });
   }

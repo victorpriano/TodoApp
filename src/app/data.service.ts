@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataService {
-  public baseUrl = "https://localhost:5001"
+  public baseUrl = "http://localhost:5000"
 
   constructor(private http: HttpClient) { }
 
